@@ -1,15 +1,16 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-10">
-      <div *ngFor="let i of numArray" class="item col-md-3 col-sm-12 col-lg-3 bg-gray"
-      style.background="{{i.color}}" 
-      style.border-left="20px solid {{i.color}}">
-          {{i.num}} {{i.color}}
+      <div class="row">
+        <div *ngFor="let i of numArray" class="item col-md-4 col-sm-12 col-lg-4 bd-left sm-size center"
+          style.background="{{i.color}}" style.border-left="20px solid {{i.color}}">
+         <p>{{i.num}}</p> 
+        </div>
       </div>
     </div>
     <div class="col-md-2">
-       <input type="button" class="btn-primary" value="Sort" (click)="sortEle()">
-       <input type="button" class="btn-primary"  value="Reshuffle" (click)="reShuffle()">
+      <input type="button" class="btn-primary" value="Sort" (click)="sortEle()">
+      <input type="button" class="btn-primary" value="Reshuffle" (click)="reShuffle()">
     </div>
   </div>
 </div>
