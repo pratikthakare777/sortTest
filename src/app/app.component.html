@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10">
+      <div *ngFor="let i of numArray" class="col-md-3 col-sm-12 col-lg-3" style.color="{{i.color}}" style.border-left="{{i.color}}">
+          {{i.num}}
+      </div>
+    </div>
+    <div class="col-md-2">
+       <input type="button" class="btn-primary" value="Sort" (click)="sortEle()">
+       <input type="button" class="btn-primary"  value="Reshuffle" (click)="reShuffle()">
+    </div>
+  </div>
+</div>
