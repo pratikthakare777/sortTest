@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'myApp';
   numArray = [{
     num: 1,
@@ -41,10 +41,6 @@ export class AppComponent implements OnInit {
     num: 9,
     color: "#2F454E"
   }];
-  // numArray = [1,2,3,4,5,6,7,8,9];
-  ngOnInit() {
-
-  }
   sortEle() {
     this.numArray.sort(function (a, b) {
       return a.num - b.num;
