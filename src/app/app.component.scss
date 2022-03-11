@@ -1,3 +1,11 @@
 .item{
-    border-left: 20px;
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   border-left: 0px !important;
+}
+@media only screen and (max-width: 768px) {
+  .bg-gray{
+      background: gray !important;
+  }
 }

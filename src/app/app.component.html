@@ -1,8 +1,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-10">
-      <div *ngFor="let i of numArray" class="col-md-3 col-sm-12 col-lg-3" style.color="{{i.color}}" style.border-left="{{i.color}}">
-          {{i.num}}
+      <div *ngFor="let i of numArray" class="item col-md-3 col-sm-12 col-lg-3 bg-gray"
+      style.background="{{i.color}}" 
+      style.border-left="20px solid {{i.color}}">
+          {{i.num}} {{i.color}}
       </div>
     </div>
     <div class="col-md-2">

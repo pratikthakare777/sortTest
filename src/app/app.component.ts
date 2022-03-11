@@ -10,10 +10,10 @@ export class AppComponent implements OnInit {
   numArray = [{
     num: 1,
     color: "#00000"
-  },{
+  }, {
     num: 2,
     color: "#333333"
-  },{
+  }, {
     num: 3,
     color: "#FFFFFF"
   },
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
       return a.num - b.num;
     });
   }
-  reShuffle(){
+  reShuffle() {
     for (var a = 0; a < this.numArray.length; a++) {
       var x = this.numArray[a];
       var y = Math.floor(Math.random() * (a + 1));
